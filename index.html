@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="App Logo" class="logo">
+        <h1>Music Player</h1>
+        <div class="buttons">
+            <button onclick="downloadApp()">Download 1.0</button>
+            <button onclick="showAbout()">About</button>
+        </div>
+    </div>
+
+    <script>
+        function downloadApp() {
+window.open("https://ownerofuzb.github.io/music-player/app/app-release.apk", "_blank");
+        }
+
+        function showAbout() {
+            window.open("https://ownerofuzb.github.io", "_blank");
+        }
+    </script>
+</body>
+</html>
