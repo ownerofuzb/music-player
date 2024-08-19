@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,42 +17,56 @@
             margin: 0;
             background-color: #f0f0f0;
         }
+
         .container {
             text-align: center;
         }
+
         .logo {
             max-width: 150px;
             margin-bottom: 20px;
         }
+
         .buttons {
             margin-top: 20px;
         }
+
         button {
             padding: 10px 20px;
             margin: 5px;
             font-size: 16px;
             cursor: pointer;
+            user-select: none;
+            background-color: #f0f0f0;
+            color: black;
+            border-color: black;
+        }
+
+        button:hover {
+            background-color: rgba(0, 0, 0, 0.100);
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <img src="logo.png" alt="App Logo" class="logo">
         <h1>Music Player</h1>
         <div class="buttons">
-            <button onclick="downloadApp()">Download 1.0 demo</button>
+            <button onclick="downloadApp()">Download 1.0</button>
             <button onclick="showAbout()">About</button>
         </div>
     </div>
 
     <script>
         function downloadApp() {
-window.open("https://ownerofuzb.github.io/music-player/app/music-player.apk", "_blank");
+            window.open("https://ownerofuzb.github.io/music-player/app/music-player.apk", "_blank");
         }
 
         function showAbout() {
-            window.open("https://ownerofuzb.github.io", "_blank");
+            window.open("https://github.com/ownerofuzb/music-player", "_blank");
         }
     </script>
 </body>
+
 </html>
